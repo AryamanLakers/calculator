@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div class="circle"></div>
+  <head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">Calculator</div>
+      <div type="text" class="result">
+          <div>
+            <p class="history_value"></p>
+          </div>
+          <div>
+            <p class="current_value"></p>
+          </div>
+      </div>
+      <div class ="button_container">
+        <div class="first-row">
+          <input type="button" name="" value="&radic;" class="operator global">
+          <input type="button" name="" value="(" class="( global">
+          <input type="button" name="" value=")" class=") global">
+          <input type="button" name="" value="%" class="operator global">
+        </div>
+        <div class="second-row">
+          <input type="button" name="" value="7" class="numbers global">
+          <input type="button" name="" value="8" class="numbers global">
+          <input type="button" name="" value="9" class="numbers global">
+          <input type="button" name="" value="/" class="operator global">
+        </div>
+        <div class="third-row">
+          <input type="button" name="" value="4" class="numbers global">
+          <input type="button" name="" value="5" class="numbers global">
+          <input type="button" name="" value="6" class="numbers global">
+          <input type="button" name="" value="*" class="operator global">
+        </div>
+        <div class="fourth-row">
+          <input type="button" name="" value="1" class="numbers global">
+          <input type="button" name="" value="2" class="numbers global">
+          <input type="button" name="" value="3" class="numbers global">
+          <input type="button" name="" value="-" class="operator global">
+        </div>
+        <div class="conflict">
+          <div class="left">
+            <input type="button" name="" value="0" class="numbers big global">
+            <input type="button" name="" value="." class="numbers global">
+            <input type="button" name="" value="Del" class=" operator global red small white-text top-margin">
+            <input type="button" name="" value="=" class=" eq operator global green white-text big top-margin">
+          </div>
+          <div class="right">
+            <input type="button" name="" value="+" class=" operator global grey plus">
+            <input type="button" name="" value="CE" class=" ce operator global">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

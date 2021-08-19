@@ -1,0 +1,131 @@
+body{
+	background-color: #54436B;
+	padding-top: 5rem;
+	text-align: center;
+	padding-bottom: 5rem;
+}
+h1{
+	padding: 4rem 0 8rem 0;
+}
+.result{
+	margin: 2rem;
+}
+.header{
+	font-size: 4rem;
+	font-family: 'Montserrat', sans-serif;
+}
+.result{
+	background-color: #C6B4CE;
+	border-width: 0;
+	padding: 1rem 7rem;
+	border-radius: 2rem;
+	width: 25rem;
+	margin: 2rem auto;
+	box-shadow: 0 0 1rem #423F3E;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.history_value{
+text-align: right;
+height: 1rem;
+margin: 0 1.2rem;
+padding-top: 1.2rem;
+padding-bottom: 1rem;
+font-size: 1.5rem;
+color: #0F044C;
+font-family: 'Montserrat', sans-serif;
+}
+.current_value{
+text-align: right;
+height: 3rem;
+margin: 0.6rem 1.2rem;
+font-size: 2rem;
+font-family: 'Montserrat-bold', sans-serif;
+}
+.result_when_clicked{
+	padding:2rem;
+	font-size: 3rem;
+	font-family: 'Montserrat', sans-serif;
+}
+.global{
+	font-size: 2rem;
+	margin: 0.2rem;
+	border-width: 0;
+	width: 5rem;
+	height: 5rem;
+	background-color: #9B72AA;
+	border-radius: 8%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+}
+.global:active{
+	font-size: 1.8rem;
+	background-color:#BCFFB9;
+	box-shadow: 0 0 1rem gold;
+
+}
+.button_container{
+	background-color:#141E61;
+	width: 27rem;
+	margin: auto;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	border-radius: 10%;
+	box-shadow: 0 0 1rem #423F3E;
+}
+.circle {
+	
+	position: absolute;
+  border: solid 3px #ccc;
+	width: 60px; 
+	height: 60px; 
+  border-radius: 50%;  
+  pointer-events: none;
+  animation: circleanim1 0.5s infinite alternate ;
+}
+.circle::before{
+    content: "";
+	width: 60px; 
+	height: 60px; 
+	border-radius: 50%;
+	position: absolute;
+	border: solid 8px gold;
+	opacity: 0.5;
+	top: -8px;
+	left: -8px;
+	animation: circleanim2 0.5s infinite alternate;
+}
+@keyframes circleanim1{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(0.7);
+	}
+} 
+
+@keyframes circleanim2{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(0.5);
+	}
+} 
+@keyframes circleanim3{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(3);
+	}
+	100%{
+		transform: scale(0.7);
+		opacity: 0.5;
+	}
+} 
+.expand{
+	animation: circleanim3 2s backwards;
+	border: 1px solid red;
+
+}
